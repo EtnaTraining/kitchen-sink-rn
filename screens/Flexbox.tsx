@@ -57,8 +57,8 @@ const ProfileSet = () => (
   </ScrollView>
 );
 
-// export default ProfileSet;
-export default Flexbox;
+export default ProfileSet;
+// export default Flexbox;
 
 const styles = StyleSheet.create({
   container: {
