@@ -2,16 +2,23 @@ import React, { useRef } from 'react';
 import {
   Animated,
   View,
-  StyleSheet,
+  UIManager,
   Dimensions,
   PanResponder,
   LayoutAnimation,
+  Platform,
 } from 'react-native';
 
 const SCREEN_WIDTH = Dimensions.get('window').width;
 const SWIPE_THRESHOLD = SCREEN_WIDTH * 0.25;
 
 import { Item } from '../screens/SwipableDeck';
+
+if (Platform.OS === 'android') {
+  if (UIManager.setLayoutAnimationEnabledExperimental) {
+    UIManager.setLayoutAnimationEnabledExperimental(true);
+  }
+}
 
 type Props = {
   data: Item[];
