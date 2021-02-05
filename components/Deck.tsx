@@ -98,6 +98,7 @@ const Deck = ({
           return null;
         }
         if (index == i) {
+          // console.log(item.id);
           return (
             <Animated.View
               key={item.id}
@@ -105,6 +106,7 @@ const Deck = ({
               style={{
                 position: 'absolute',
                 width: SCREEN_WIDTH,
+                elevation: 1,
                 transform: [
                   { translateX: position.x },
                   { translateY: position.y },
@@ -115,8 +117,9 @@ const Deck = ({
               {renderCard(item)}
             </Animated.View>
           );
-        } else
-          return (
+        } else { 
+            // console.log(item.id);
+            return (
             <Animated.View
               key={item.id}
               style={{
@@ -127,7 +130,7 @@ const Deck = ({
             >
               {renderCard(item)}
             </Animated.View>
-          );
+          )};
       })
       .reverse();
   };
