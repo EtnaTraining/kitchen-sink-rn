@@ -23,4 +23,13 @@ export type RootStackParamList = {
   AnimationSequence: undefined;
   AnimationStaggering: undefined;
   SwipableDeck: undefined;
+  RandomWidth: undefined;
+  RandomMove: undefined;
+  AnimationModifiers: undefined;
+  GrowingBall: undefined;
+  MovingBall: undefined;
+  AnimatedBall: undefined;
+  BottomSheet: undefined;
+  ScrollEvents: undefined;
+
 };

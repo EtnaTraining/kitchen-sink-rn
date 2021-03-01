@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View, StyleSheet, ViewStyle, StyleProp } from 'react-native';
+import { View, StyleSheet, ViewStyle, StyleProp, Text } from 'react-native';
 
 type Props = {
   style?: StyleProp<ViewStyle>;
@@ -8,6 +8,14 @@ type Props = {
 };
 
 const defaultSize = 120;
+
+
+
+const Box2 = (): JSX.Element => (
+  <View>
+    <Text>Hello world</Text>
+  </View>
+)
 
 const Box = ({ style, children, size = defaultSize }: Props) => (
   // const Box = (props: Props) => (

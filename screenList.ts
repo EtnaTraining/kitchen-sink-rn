@@ -22,6 +22,14 @@ import TextInputAnimate from './screens/TextInputAnimate';
 import SpinningAnimationScreen from './screens/SpinningAnnimation';
 import AnimatedWelcomeScreen from './screens/AnimatedWelcome';
 import SwipableDeckScreen from './screens/SwipableDeck';
+import RandomWidthScreen from './screens/RandomWidth';
+import RandomMoveScreen from './screens/RandomMove';
+import AnimationModifiersScreen from './screens/AnimationModifiers';
+import GrowingBallScreen from './screens/GrowingBall';
+import MovingBallScreen from './screens/MovingBall';
+import ScrollEventsScreen from './screens/ScrollEvents';
+import AnimatedBallScreen from './screens/AnimatedBall';
+import BottomSheetScreen from './screens/BottomSheet';
 
 type Screen = {
   title: string;
@@ -30,6 +38,42 @@ type Screen = {
 };
 
 export const screenList: Screen[] = [
+  {
+    title: 'Bottom Sheet',
+    name: 'BottomSheet',
+    component: BottomSheetScreen
+  },
+  {
+    title: 'Scroll Events',
+    name: 'ScrollEvents',
+    component: ScrollEventsScreen
+  },
+  {
+    title: 'Moving Ball',
+    name: 'MovingBall',
+    component: MovingBallScreen
+  },
+  {
+    title: 'Growing Ball',
+    name: 'GrowingBall',
+    component: GrowingBallScreen
+  },
+  {
+    title: 'Animated Ball',
+    name: 'AnimatedBall',
+    component: AnimatedBallScreen
+  },
+  {
+    title: 'Animation modifiers',
+    name: 'AnimationModifiers',
+    component: AnimationModifiersScreen
+  },
+  {
+    title: 'Random move',
+    name: 'RandomMove',
+    component: RandomMoveScreen
+  },
+
   { title: 'Details Screen', name: 'Details', component: DetailsScreen },
   { title: 'Simple Theme', name: 'SimpleTheme', component: SimpleThemeScreen },
   {
@@ -98,6 +142,12 @@ export const screenList: Screen[] = [
     name: 'SwipableDeck',
     component: SwipableDeckScreen,
   },
+  {
+    title: 'Random width',
+    name: 'RandomWidth',
+    component: RandomWidthScreen
+  },
+
 
   // {
   //   title: 'Animated Welcome',
