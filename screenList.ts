@@ -39,6 +39,36 @@ type Screen = {
 
 export const screenList: Screen[] = [
   {
+    title: 'Random width',
+    name: 'RandomWidth',
+    component: RandomWidthScreen
+  },
+  {
+    title: 'Random move',
+    name: 'RandomMove',
+    component: RandomMoveScreen
+  },
+  {
+    title: 'Growing Ball',
+    name: 'GrowingBall',
+    component: GrowingBallScreen
+  },
+  {
+    title: 'Animation modifiers',
+    name: 'AnimationModifiers',
+    component: AnimationModifiersScreen
+  },
+  {
+    title: 'Moving Ball',
+    name: 'MovingBall',
+    component: MovingBallScreen
+  },
+  {
+    title: 'Animated Ball',
+    name: 'AnimatedBall',
+    component: AnimatedBallScreen
+  },
+  {
     title: 'Bottom Sheet',
     name: 'BottomSheet',
     component: BottomSheetScreen
@@ -48,31 +78,9 @@ export const screenList: Screen[] = [
     name: 'ScrollEvents',
     component: ScrollEventsScreen
   },
-  {
-    title: 'Moving Ball',
-    name: 'MovingBall',
-    component: MovingBallScreen
-  },
-  {
-    title: 'Growing Ball',
-    name: 'GrowingBall',
-    component: GrowingBallScreen
-  },
-  {
-    title: 'Animated Ball',
-    name: 'AnimatedBall',
-    component: AnimatedBallScreen
-  },
-  {
-    title: 'Animation modifiers',
-    name: 'AnimationModifiers',
-    component: AnimationModifiersScreen
-  },
-  {
-    title: 'Random move',
-    name: 'RandomMove',
-    component: RandomMoveScreen
-  },
+
+
+
 
   { title: 'Details Screen', name: 'Details', component: DetailsScreen },
   { title: 'Simple Theme', name: 'SimpleTheme', component: SimpleThemeScreen },
@@ -142,11 +150,7 @@ export const screenList: Screen[] = [
     name: 'SwipableDeck',
     component: SwipableDeckScreen,
   },
-  {
-    title: 'Random width',
-    name: 'RandomWidth',
-    component: RandomWidthScreen
-  },
+
 
 
   // {
